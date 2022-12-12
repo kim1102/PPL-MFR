@@ -15,6 +15,7 @@ year      = {2022},
 url       = {https://bmvc2022.mpi-inf.mpg.de/0723.pdf}
 }
 ```
+BMVC2022 paper page: https://bmvc2022.mpi-inf.mpg.de/723/
 
 >## Usage
 
@@ -51,6 +52,10 @@ sim_loss = torch.mean(sim_loss)
 # Calculate total loss
 total_loss = CELoss(clean_p, label) + CELoss(mask_p, label) + sim_loss
 ```
+
+>## MFW+ dataset
+<img src="assets/mfw_sample.png"/>
+We provide URL list of image files in assets directory.
 
 >## Reference
 
