@@ -20,8 +20,8 @@ url       = {https://bmvc2022.mpi-inf.mpg.de/0723.pdf}
 
 ```python
 import torch
-import ireset50 from backbone
-import ArcFace from losses
+from backbone import iresnet50
+from losses import ArcFace
 
 # Loss definition
 CELoss = torch.nn.CrossEntropyLoss()
