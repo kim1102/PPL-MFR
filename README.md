@@ -30,14 +30,14 @@ CELoss = torch.nn.CrossEntropyLoss()
 sim_margin = 1.0
 
 # Assume training target network: backbone 'f(x)' and linear layer 'W'
-f = backbone(fp16=False)
+f = iresnet50(fp16=False)
 W1 = ArcFace(dim=512, m=0.5)
 W2 = ArcFace(dim=512, m=0.5)
 
 # extract feature from clean face image
-clean_emb = backbone(clean_img)
+clean_emb = f(clean_img)
 # extract feature from masked face image
-mask_emb = backbone(mask_img)
+mask_emb = f(mask_img)
 
 # Calculate new posterior probability using PPL method
 clean_p = W1(clean_emb, label)
