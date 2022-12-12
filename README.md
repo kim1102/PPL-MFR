@@ -54,7 +54,7 @@ total_loss = CELoss(clean_p, label) + CELoss(mask_p, label) + sim_loss
 ```
 
 >## MFW+ dataset
-<img src="assets/mfw_sample.png"/ width="80%" height="80%">
+<img src="assets/mfw_sample.png" width="80%" height="80%"/>
 We provide URL list of image files in assets directory.
 
 >## Reference
