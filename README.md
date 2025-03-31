@@ -15,9 +15,7 @@ year      = {2022},
 url       = {https://bmvc2022.mpi-inf.mpg.de/0723.pdf}
 }
 ```
-BMVC2022 paper page: https://bmvc2022.mpi-inf.mpg.de/723/
-
-Paper PDF: https://bmvc2022.mpi-inf.mpg.de/0723.pdf
+BMVC2022 paper page: https://bmvc2022.mpi-inf.mpg.de/0723.pdf
 
 >## Usage
 
